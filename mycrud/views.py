@@ -26,7 +26,6 @@ def add(request):
         std.save()
     return HttpResponseRedirect('/home/')
 
-# ye view delete krta hai
 def deleteData(request,id):
     std=Info.objects.get(pk=id)
     std.delete()
